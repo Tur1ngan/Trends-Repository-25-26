@@ -1,81 +1,193 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My Ultimate College Life Web Page</title>
-    </head>
-    <body>
-        <h1>++ Mark Jerome M. Breboneria ++</h1>
-        <h2>== About Me ==</h2>
-        <p>Hi! I'm Mark or you can call me "Turingan", I'm a computer science student who likes games and music. ✌️</p>
-        <h2>== College Must Haves ==</h2>
-        <ul>
-            <li>Water 🌊</li>
-            <li>Laptop 💻</li>
-            <li>Money 💰</li>
-            <li>Headset 🎧</li>
-        </ul>
-    <h2>== Daily Routine ==</h2>
+<head>
+    <title>My Ultimate College Life Web Page</title>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+        color: white;
+        margin: 0;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 40px;
+        color: #00f5ff;
+        text-shadow: 0 0 10px #00f5ff;
+        margin-bottom: 5px;
+    }
+
+    h2 {
+        margin-top: 40px;
+        color: #ffd369;
+        border-bottom: 2px solid #ffd369;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+
+    h3 {
+        color: #00adb5;
+        margin-top: 20px;
+    }
+
+    p {
+        max-width: 700px;
+        margin: 15px auto;
+        line-height: 1.6;
+    }
+
+    ul, ol {
+        padding-left: 0;
+        list-style-position: inside;
+    }
+
+    li {
+        margin: 8px 0;
+    }
+
+    /* Routine Cards */
+    .routine {
+        background: rgba(255,255,255,0.05);
+        padding: 15px;
+        margin: 20px auto;
+        border-radius: 10px;
+        width: 80%;
+        max-width: 600px;
+    }
+
+    /* Certificate Grid */
+    .certificates {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .certificates img {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+        border: 2px solid #00f5ff;
+        box-shadow: 0 0 10px rgba(0,245,255,0.5);
+        transition: transform 0.3s ease;
+    }
+
+    .certificates img:hover {
+        transform: scale(1.1);
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 12px 25px;
+        font-size: 16px;
+        border: none;
+        border-radius: 25px;
+        background: #00adb5;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    button:hover {
+        background: #00f5ff;
+        transform: scale(1.05);
+    }
+
+    #message {
+        font-size: 22px;
+        margin-top: 15px;
+        color: #ffd369;
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <h1>My Ultimate College Life</h1>
+    <h1>++ Mark Jerome M. Breboneria ++</h1>
+
+    <h2>About Me</h2>
+    <p>
+        Hi! I'm Mark, also known as "Turingan".  
+        I'm a computer science student who likes games, music, and contemplating life 🤔
+    </p>
+
+    <h2>College Must Haves</h2>
     <ul>
-        <h3>Morning Activities:</h3>
+        <li>Water 🌊</li>
+        <li>Laptop 💻</li>
+        <li>Money 💰</li>
+        <li>Headset 🎧</li>
+    </ul>
+
+    <h2>Daily Routine</h2>
+
+    <div class="routine">
+        <h3>Morning Activities</h3>
         <ol>
             <li>Wake up</li>
             <li>Contemplate 🤔</li>
             <li>Take a shower</li>
             <li>Contemplate even more 🤔</li>
-            <li>Do some tasks in school</li>
+            <li>Do some school tasks</li>
         </ol>
-        <h3>Evening Activities:</h3>
+    </div>
+
+    <div class="routine">
+        <h3>Evening Activities</h3>
         <ol>
-            <li>Take a nap for 1 hour</li>
-            <li>Finish some school tasks</li>
+            <li>Take a 1-hour nap</li>
+            <li>Finish school tasks</li>
             <li>Listen to music</li>
             <li>Play videogames</li>
             <li>Sleep</li>
         </ol>
-    </ul>
-    <h2>== Hobbies/Interests ==</h2>
+    </div>
+
+    <h2>Hobbies / Interests</h2>
     <ul>
         <li>Playing videogames (Albion Online)</li>
-        <li>Listen to all kinds of music (depending on my mood)</li>
-        <li>Watch videos about sci-fi (Warhammer 40k)</li>
-        <li>I like the Breaking Bad series</li>
-        <li>hehe</li>
+        <li>Listening to music</li>
+        <li>Watching sci-fi (Warhammer 40k)</li>
+        <li>Breaking Bad series</li>
         <li>Contemplating 🤔</li>
-        <li>I like food 🍕</li>
+        <li>Food 🍕</li>
     </ul>
-    <h2>== Additional Information ==</h2>
-    <ul>
-        <h3>Certifications:</h3>
-        <ul>
-            <li>
-                <img src="certificates\Breboneria, Mark Jerome M (1).png", style="max-width: 25%; height: auto;">
-            </li>
-            <li>
-                <img src="certificates\codecadew.png", style="max-width: 25%; height: auto;">
-            </li>
-            <li>
-                <img src="certificates\datacamp.png", style="max-width: 25%; height: auto;">
-            </li>
-            <li>
-                <img src="certificates\pyocn.png", style="max-width: 25%; height: auto;">
-            </li>
-            <li>
-                <img src="certificates\reseach.png", style="max-width: 25%; height: auto;">
-            </li>
-        </ul>
-    </ul>
-    <h2>== Frieren Button ==</h2>
+
+    <h2>Certifications</h2>
+    <div class="certificates">
+        <img src="certificates/Breboneria, Mark Jerome M (1).png">
+        <img src="certificates/codecadew.png">
+        <img src="certificates/datacamp.png">
+        <img src="certificates/pyocn.png">
+        <img src="certificates/reseach.png">
+    </div>
+
+    <h2>Frieren Button</h2>
     <button id="btn">Click Frieren</button>
-    <p id="message"><{(0_0)}></p>
-    </body>
+    <p id="message">&lt;{(0_0)}&gt;</p>
+
+</div>
 
 <script>
     const button = document.getElementById("btn");
     const message = document.getElementById("message");
 
     button.addEventListener("click", function() {
-        message.innerHTML = "<{(= w =)}>";
+        message.innerHTML = "&lt;{(= w =)}&gt;";
     });
 </script>
 
+</body>
 </html>
